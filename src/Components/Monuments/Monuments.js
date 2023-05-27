@@ -20,32 +20,30 @@ import troizkaya from "./assets/troizkaya.jpeg"
 const {Content} = Layout;
 const { Meta } = Card;
 
-const heightImage = 700;
-const widthImage = 1340;
-
-
 function Monuments() {
     return (
         <Content className="site-layout" style={{ padding: '0 50px' }}>
             <Col span={24}>
                 <Card className='card' title="Памятники Барышского района" bordered={false}>
-                    <Carousel autoplay>
-                        <div>
-                            <Image width={widthImage} height={heightImage} src={lenin}/>
-                        </div>
-                        <div className='carousel-image'>
-                            <Image width={widthImage} height={heightImage} src={troizkaya}/>
-                        </div>
-                        <div>
-                            <Image width={widthImage} height={heightImage} src={sobor}/>
-                        </div>
-                        <div>
-                            <Image width={widthImage} height={heightImage} src={soldat}/>
-                        </div>
-                        <div>
-                            <Image width={widthImage} height={heightImage} src={sedov}/>
-                        </div>
-                    </Carousel>
+                    <div className='center'>
+                        <Carousel autoplay>
+                            <div className='carousel-img'>
+                                <Image height={800} src={lenin}/>
+                            </div>
+                            <div className='carousel-img'>
+                                <Image height={800} src={troizkaya}/>
+                            </div>
+                            <div className='carousel-img'>
+                                <Image height={800} src={sobor}/>
+                            </div>
+                            <div className='carousel-img'>
+                                <Image height={800} src={soldat}/>
+                            </div>
+                            <div className='carousel-img'>
+                                <Image height={800} src={sedov}/>
+                            </div>
+                        </Carousel>
+                    </div>
                 </Card>
             </Col>
             <Row gutter={16}>
